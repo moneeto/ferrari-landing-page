@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="media/580b585b2edbce24c47b2c52.png">
+    <title>Landing Page</title>
+</head>
+<body id="bodyId">
+
+  <header id="header">
+      <nav id="nav-bar">
+        <ul class="flex-list-container">
+          <li class="nav-link hover-underline-animation"><a href="#welcome-section">FERRARI</a></li>
+          <li class="nav-link hover-underline-animation"><a href="#racing-section">RACING</a></li>
+          <li class="nav-link hover-underline-animation"><a href="#store-section">STORE</a></li>
+          <li class="nav-link hover-underline-animation"><a href="#map-section">CONTACT</a></li>
+        </ul>  
+    </nav>      
+  </header>
+
+  <section id="welcome-section">
+    <div class="video-div">
+      <video src="/Pagina de Producto/media/y2mate.com - GT3 458 4K_1080p_Trim.mp4" muted autoplay preload loop></video>
+    </div>
+    <h1 class="car-h1">GT3 458</h1>
+  </section>
+  
+  <section id="racing-section">
+    
+    <div class="racing-cars-div reveal">
+      <div class="racing-cars-text">
+        <h1 class="racing-cars-title" id="racing-cars-title">Ferrari GT3 458</h1>
+        <p class="racing-cars-p">El Ferrari 458 Italia es un automóvil superdeportivo de 2 puertas biplaza, con motor central-trasero montado longitudinalmente y tracción trasera, producido por el fabricante italiano Ferrari desde 2009 hasta 2015 como reemplazo del Ferrari F430. A su vez fue reemplazado por el 488, que fue develado en el Salón del Automóvil de Ginebra de 2015.​</p>
+      </div>
+      <img class="f458-img" src="/Pagina de Producto/media/2011_Ferrari_458GT3-0-1024.jpg" alt="Ferrari GT3 458">
+    
+      
+  </section>
+  
+  <section id="store-section">
+    <div class="car-card-div">
+      <div class="car-img">
+        <img class="g458-img" src="/Pagina de Producto/media/png-transparent-ferrari-f430-car-enzo-ferrari-2014-ferrari-458-italia-ferrari-performance-car-vehicle-ferrari.png"> 
+      </div>
+      <div class="mDlR">
+        <div class="card-info">
+          <h1 class="title-ferrari">Ferrari GT3 458</h1>
+          <p class="description">El Ferrari GT3 458 Italia cuenta con el primer <strong>motor</strong> central trasero de inyección directa en un Ferrari con 4499 cc y capaz de desarrollar 570 CV de potencia a <code style="background: #dddddf;">9000 rpm</code>, con exactamente 127 CV/litro, sin duda alguna un hito en la eficiencia de los motores Ferrari.</p>
+        </div>
+        <div class="button-card">
+          <a style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;" class="price"><sup><p style="text-decoration:line-through;">U$D 282.699</p></sup><strong>U$D 239.340</strong></a>  
+          <a href="#" class="contact-button" type="button">Book now</a>
+        </div>
+      </div>
+        
+    </div>
+
+
+  </section>
+  
+  
+  <section id="map-section">
+    <h1 style="color: white;
+               font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+               font-weight: 600;">Designed by Joaquin Palmeyro</h1>
+  </section>
+
+
+<script>
+  // NAVBAR scrolldown
+    window.addEventListener("scroll", function(){
+      var nav = document.querySelector("header");
+      nav.classList.toggle("scrollDown",window.scrollY > 0);
+    });
+
+
+  window.addEventListener("scroll", reveal)
+
+  function reveal() {
+    var reveals = document.querySelectorAll('.reveal')
+    for(var i = 0; i < reveals.length; i++){
+        var windowHeight = window.innerHeight;
+        var revealTop = reveals[i].getBoundingClientRect().top;
+        var revealPoint = 250;
+
+        if (revealTop < windowHeight - revealPoint){
+            reveals[i].classList.add('active');
+        }
+        else{
+            reveals[i].classList.remove('active');
+        }
+    }
+}
+
+</script>
+</body>
+</html>

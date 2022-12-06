@@ -1,0 +1,378 @@
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Anton&family=Caveat&family=Exo:wght@100;200;300;400&family=Fredoka+One&family=Gelasio:wght@500&family=League+Spartan:wght@500&family=Nunito:ital,wght@0,200;1,400&family=Poppins:wght@500&family=Questrial&family=Roboto:wght@500&family=Saira+Condensed&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    overflow-x: hidden;
+}
+
+#bodyId::-webkit-scrollbar {
+    width: 8px;
+    background-color: #171717;
+}
+
+#bodyId::-webkit-scrollbar-thumb {
+    background: rgb(80, 80, 80);
+    border-radius: 7px;
+    border: 1px solid #181818;
+}
+
+.header-image {
+    margin: 50px 0;
+}
+
+.flex-list-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 50px;
+    transition: 0.5s;
+}
+
+#header {
+    display: flex;
+    position: fixed;
+    background: transparent;
+    width: 100%;
+    height: 80px;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 5;
+    opacity: 0.5;
+    transition: 0.5s;
+}
+
+#header.scrollDown{
+    opacity: 1;
+    transition: .5s;
+    background: #2C3333;
+}
+
+li {
+    list-style: none;
+}   
+
+.nav-link {
+    padding: 10px;
+    width: 100px;
+    text-align: center;
+    margin: 7px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.hover-underline-animation {
+    display: inline-block;
+    position: relative;
+    color: #ffffff;
+  }
+  
+.hover-underline-animation:after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: white;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+  }
+  
+  .hover-underline-animation:hover:after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+  }
+
+#welcome-section {
+    width: 100%;
+    height: 100vh;
+    background: rgb(20, 19, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.video-div{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    opacity: 0.15;
+}
+
+.video-div video {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+    transform: translate(-50%, -50%);
+}
+
+.car-h1 {
+    color: #979797;
+    z-index: 1;
+    font-family: Exo, sans-serif;
+    font-size: 6vw;
+    font-weight: 200;
+    transition: 0.3s ease-in;
+}
+
+.car-h1:hover {
+    color: #ffffff;
+    transition: 0.3s ease-out;
+    cursor: default;
+}
+
+#racing-section {
+    width: 100%;
+    height: 800px;
+    background: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.racing-cars-div{
+    width: 100%;
+    height: 700px;
+    margin: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    transform: translateX(-50px);
+}
+
+.racing-cars-text{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    padding: 20px;
+}
+.racing-cars-title{
+    color: rgb(0, 0, 0);
+    text-align: start;
+    font-family:'Exo', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 2em;
+}
+
+.racing-cars-p{
+    color: #000000;
+    font-family: Questrial, sans-serif;
+    font-size: 1.5em;
+    font-style: italic;
+    text-align: start;
+    width: 90%;
+}
+
+.f458-img {
+    width: 50%;
+    margin-right: 2vw;
+}
+
+#store-section {
+    width: 100%;
+    height: 800px;
+    background: rgb(255, 238, 0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.car-card-div{
+    background: linear-gradient(#fff, lightgray);
+    height: 600px;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    border-radius: 20px;
+    border: 5px double black;
+}
+
+.mDlR {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: calc(600px - 172px);
+}
+
+.car-img {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.g458-img {
+    width: 80%;
+    transition: 0.5s;
+}
+
+
+.button-card {
+    display: flex;
+    height: 230px;
+    flex-direction: column;
+    align-items: center;
+    margin-top: .5vw;
+}
+.card-info{
+    padding-top: 20px;
+    width: 50%;
+    text-align: justify;
+}
+
+
+.title-ferrari {
+    font-family: 'Exo', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.description {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.price {
+    padding: 5px;
+    width: 200%;
+    background: rgb(207, 179, 20);
+    margin-bottom: 5px;
+}
+
+.contact-button {
+    padding: 5px;
+    width: 200%;
+    color: white;
+    background:rgb(131, 131, 131);
+    transition: 0.2s;
+    font-family: 'Exo', Tahoma, Geneva, Verdana, sans-serif;
+    border: 1px solid black;
+}
+
+.contact-button:hover {
+    background:rgb(20, 19, 19);
+    transition: 0.2s;
+}
+
+#map-section{
+    width: 100%;
+    height: 800px;
+    background: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.reveal {
+    opacity: 0;
+    transition: all 0.2s;
+}
+
+.active {
+    opacity: 1;
+    transition: all 1s;
+    transform: translateX(0px);
+}
+
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+@media (max-width: 800px) {
+
+    #header{
+        display: flex;
+        justify-content: center;
+    }
+
+    .car-h1{
+        font-size: 50px;
+    }
+
+    .racing-cars-div{
+        flex-direction: column;
+        justify-content: flex-start;
+        margin-top: 0px;
+    }
+
+    .racing-cars-title{
+        text-align: center;
+        font-size: 2.5em;
+        margin-bottom: 15px;
+    }
+    
+    .racing-cars-p{
+        font-size: 1.5em;
+        text-align: justify;
+        width: 100%;
+    }
+    
+    .f458-img {
+        width: 100%;
+        height: auto;
+        margin: 0;
+        animation: imageRevealDos 2s;
+    }
+
+    .car-card-div{
+        height: 600px;
+    }
+
+    .g458-img {
+        transition: .2s;
+        opacity: 0;
+    }
+
+    .car-card__p {
+        opacity: 0;
+    }
+    
+    .card-info {
+        padding-top: 10px;
+        width: 80%;
+    }
+    
+    .button-card {
+        margin-top: 60px;
+    }
+
+
+}
+
+/*@keyframes imageReveal {
+    0%{
+        width: 0;
+    }
+    100%{
+        width: 50%;
+    }
+}
+
+@keyframes imageRevealDos {
+    0%{ 
+        width: 0;
+    }
+    100% {
+        width: 100%;
+    }
+}
+*/
